@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.collections.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="440.0" prefWidth="435.0" xmlns:fx="http://javafx.com/fxml" fx:controller="vista.controlador.controladorAlumno">
+  <children>
+    <Pane prefHeight="440.0" prefWidth="435.0">
+      <children>
+        <ToolBar prefWidth="435.0">
+          <items>
+            <Button fx:id="btnGuardar" mnemonicParsing="false" text="Guardar" onAction="#registrar"/>
+            <Button fx:id="btnEliminar" mnemonicParsing="false" text="Eliminar" onAction="#Eliminar"/>
+            <Button fx:id="btnModificar" mnemonicParsing="false" text="Modificar" onAction="#actualizar"/>
+          </items>
+        </ToolBar>
+        <Label layoutX="14.0" layoutY="48.0" text="Nombre:" />
+        <Label layoutX="14.0" layoutY="76.0" text="A. paterno:" />
+        <Label layoutX="14.0" layoutY="103.0" text="A. materno:" />
+        <Label layoutX="14.0" layoutY="127.0" text="Fecha de Nacimiento:" />
+        <Label layoutX="13.0" layoutY="153.0" prefHeight="21.310546875" prefWidth="72.0" text="Sexo:" />
+        <TextField fx:id="txtNombre" layoutX="109.0" layoutY="42.0" prefWidth="123.0" />
+        <TextField fx:id="txtPaterno" layoutX="109.0" layoutY="70.0" prefWidth="123.0" />
+        <TextField fx:id="txtMaterno" layoutX="109.0" layoutY="100.0" prefWidth="123.0" />
+        <TextField fx:id="txtFecha" layoutX="177.0" layoutY="124.0" prefWidth="123.0" />
+        <ComboBox fx:id="cboSexo" layoutX="109.0" layoutY="148.0" prefHeight="21.0" prefWidth="123.0">
+          <items>
+            <FXCollections fx:factory="observableArrayList">
+              <String fx:value="Femenino" />
+              <String fx:value="Masculino" />
+            </FXCollections>
+          </items>
+        </ComboBox>
+        <Separator layoutX="10.0" layoutY="211.0" minHeight="0.0" prefHeight="0.0" prefWidth="411.0" />
+        <Separator layoutX="18.0" layoutY="378.0" prefWidth="403.0" />
+        <Label fx:id="lblMensajes" layoutX="190.0" layoutY="400.0" text="Mensajes" />
+        <Label layoutX="15.0" layoutY="184.0" text="Carrera:" />
+        <ComboBox id="" fx:id="cboCarrera" layoutX="109.0" layoutY="181.0" prefHeight="21.0" prefWidth="123.0">
+          <items>
+            <FXCollections fx:factory="observableArrayList">
+              <String fx:value="Carrera" />
+            </FXCollections>
+          </items>
+        </ComboBox>
+      </children>
+    </Pane>
+    <TableView id="tbCarrera" fx:id="tbAlumno" layoutX="10.0" layoutY="220.0" prefHeight="144.0" prefWidth="411.0" />
+  </children>
+</AnchorPane>

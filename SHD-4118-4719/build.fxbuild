@@ -1,0 +1,2 @@
+jfx.build.stagingdir = ${workspace}/SHDMayraAndradeLopez/build
+jfx.build.apptitle = SHDMayraAndradeLopez
