@@ -15,7 +15,8 @@ public class Alumno {
 	private Integer idAlumno;
 	private conexion miConexion;
 
-	public Alumno(){
+	//mall muy mal hehehe
+	/*public Alumno(){
 		this.nombre="";
 		this.apaterno="";
 		this.amaterno="";
@@ -24,7 +25,7 @@ public class Alumno {
 		this.carrera=new carrera();
 		this.miConexion = new conexion();
 
-	}
+	}*/
 	public Alumno(String _nombre, String _apaterno, String _amaterno,
 			String _fechaNacimiento, String _sexo, carrera _carrera) {
 		this.nombre = _nombre;
