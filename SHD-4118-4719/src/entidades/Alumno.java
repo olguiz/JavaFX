@@ -13,10 +13,9 @@ public class Alumno {
 	private String nombre, apaterno, amaterno, fechaNacimiento, sexo;
 	private carrera carrera;
 	private Integer idAlumno;
-	private conexion miConexion;
-
-	public Alumno(){
-		this.nombre="";
+	//private conexion miConexion;
+	//esta no va
+	public Alumno(){	this.nombre="";
 		this.apaterno="";
 		this.amaterno="";
 		this.fechaNacimiento="";
